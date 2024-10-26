@@ -12,11 +12,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item RAW_TEMP = registerItem("raw_ruby", new Item(new FabricItemSettings()));
+    public static final Item RAW_GOOBITE = registerItem("raw_goobite", new Item(new FabricItemSettings()));
+    public static final Item GOOBITE_INGOT = registerItem("goobite_ingot", new Item(new FabricItemSettings()));
 
 
     private static void addItemToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(RAW_TEMP);
+        entries.add(RAW_GOOBITE);
+        entries.add(GOOBITE_INGOT);
     }
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BeyondTheVeil.MOD_ID, name), item);

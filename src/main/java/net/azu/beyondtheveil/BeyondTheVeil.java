@@ -1,5 +1,8 @@
 package net.azu.beyondtheveil;
 
+import net.azu.beyondtheveil.blocks.ModBlocks;
+import net.azu.beyondtheveil.items.ModItemGroups;
+import net.azu.beyondtheveil.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +15,10 @@ public class BeyondTheVeil implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+
+		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
+		ModBlocks.registerModBlocks();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

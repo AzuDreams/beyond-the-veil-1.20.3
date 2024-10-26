@@ -7,13 +7,15 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
-    protected ModLootTableProvider(FabricDataOutput dataOutput) {
+    public ModLootTableProvider(FabricDataOutput dataOutput) {
         super(dataOutput);
     }
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.TEMP_ORE, oreDrops(ModBlocks.TEMP_ORE, ModItems.RAW_TEMP));
+        addDrop(ModBlocks.GOOBITE_ORE, oreDrops(ModBlocks.GOOBITE_ORE, ModItems.RAW_GOOBITE));
+
+        addDrop(ModBlocks.GOOBITE_BLOCK);
 
     }
 }

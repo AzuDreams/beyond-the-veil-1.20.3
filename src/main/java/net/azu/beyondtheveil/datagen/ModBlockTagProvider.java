@@ -16,9 +16,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider.Bloc
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.TEMP_ORE);
+                .add(ModBlocks.GOOBITE_ORE)
+                .add(ModBlocks.GOOBITE_BLOCK);
+
     getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-            .add(ModBlocks.TEMP_ORE);
+            .add(ModBlocks.GOOBITE_ORE)
+            .add(ModBlocks.GOOBITE_BLOCK);
 
     }
 }

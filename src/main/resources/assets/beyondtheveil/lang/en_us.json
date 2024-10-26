@@ -1,3 +1,6 @@
 {
-  "block.beyondtheveil.temp_ore": "Temp Ore"
+  "block.beyondtheveil.goobite_block": "Goobite Block",
+  "block.beyondtheveil.goobite_ore": "Goobite Ore",
+  "item.beyondtheveil.raw_goobite": "Raw Goobite",
+  "item.beyondtheveil.goobite_ingot": "Goobite Ingot"
 }

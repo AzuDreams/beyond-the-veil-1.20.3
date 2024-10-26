@@ -1,6 +1,7 @@
 package net.azu.beyondtheveil.blocks;
 
 import net.azu.beyondtheveil.BeyondTheVeil;
+import net.azu.beyondtheveil.blocks.custom.AlterBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -15,8 +16,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
-    public static final Block  TEMP_ORE = registerBlock("temp_ore",
+    public static final Block GOOBITE_ORE = registerBlock("goobite_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2,5), FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
+    public static final Block GOOBITE_BLOCK = registerBlock("goobite_block",
+            new AlterBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).sounds(BlockSoundGroup.SCULK)));
 
 
     public static Block registerBlock(String name, Block block) {
